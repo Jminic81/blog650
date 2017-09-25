@@ -6,15 +6,11 @@ title: R Dot Plot
 weight: 10
 ---
 
-#How to use an R dot plot to display Lahman database stats.
+How to use an R dot plot to display Lahman database stats.
 
 Comparing number of career homeruns vs. strike outs for all Players (Figure 1). 
 
 Dot plot was formated so that hover feature produces first and last name of player at each data point (Figure 2, 3)
-
-R:image=posts/images/"fig1.jpg"
-R:image=posts/images/"fig2.jpg"
-R:image=posts/images/"fig3.jpg"
 
 R Studio commands: 
 
