@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Your site title</title>
-    <link>Your%20site%20URL/categories/</link>
-    <description>Recent content in Categories on Your site title</description>
+    <title>Categories on blog650</title>
+    <link>/sites/blog650/categories/</link>
+    <description>Recent content in Categories on blog650</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright notice</copyright>
     
-	<atom:link href="Your%20site%20URL/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/sites/blog650/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Development</title>
-      <link>Your%20site%20URL/categories/development/</link>
+      <link>/sites/blog650/categories/development/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>Your%20site%20URL/categories/development/</guid>
+      <guid>/sites/blog650/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>Your%20site%20URL/categories/golang/</link>
+      <link>/sites/blog650/categories/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>Your%20site%20URL/categories/golang/</guid>
+      <guid>/sites/blog650/categories/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>Your%20site%20URL/categories/r/</link>
+      <link>/sites/blog650/categories/r/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>Your%20site%20URL/categories/r/</guid>
+      <guid>/sites/blog650/categories/r/</guid>
       <description></description>
     </item>
     

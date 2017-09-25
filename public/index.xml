@@ -1,43 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your site title</title>
-    <link>Your%20site%20URL/</link>
-    <description>Recent content on Your site title</description>
+    <title>blog650</title>
+    <link>/sites/blog650/</link>
+    <description>Recent content on blog650</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright notice</copyright>
-    <lastBuildDate>Sat, 01 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="Your%20site%20URL/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/sites/blog650/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Image Zoom Sample</title>
-      <link>Your%20site%20URL/posts/image-zoom-sample/</link>
-      <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
+      <title>R Dot Plot</title>
+      <link>/sites/blog650/posts/image-zoom-sample/</link>
+      <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>Your%20site%20URL/posts/image-zoom-sample/</guid>
-      <description>This theme is magnified like the image of Medium.
-The jQuery plugin called Zoom.js is used.</description>
+      <guid>/sites/blog650/posts/image-zoom-sample/</guid>
+      <description>How to use an R dot plot to display Lahman database stats.
+Comparing number of career homeruns vs. strike outs for all Players (Figure 1).
+Dot plot was formated so that hover feature produces first and last name of player at each data point (Figure 2, 3)
+R:image=&amp;ldquo;posts/images/&amp;ldquo;fig1.jpg&amp;rdquo; R:image=&amp;ldquo;posts/images/&amp;ldquo;fig2.jpg&amp;rdquo; R:image=&amp;ldquo;posts/images/&amp;ldquo;fig3.jpg&amp;rdquo;
+R Studio commands:
+ install.packages(&amp;ldquo;Lahman&amp;rdquo;) library(&amp;ldquo;dplyr&amp;rdquo;, lib.loc=&amp;rdquo;~/R/win-library/3.4&amp;rdquo;) install.packages(&amp;ldquo;ggplot2&amp;rdquo;) install.packages(&amp;ldquo;ggiraph&amp;rdquo;)
+library(Lahman) library(dplyr) library(ggplot2) library(ggiraph)
+df&amp;lt;-Batting%&amp;gt;% + group_by(playerID)%&amp;gt;% + summarize(career_HR=sum(HR),career_SO=sum(SO))%&amp;gt;% + filter(career_HR&amp;gt;=400) df</description>
     </item>
     
     <item>
       <title>Creating a New Theme</title>
-      <link>Your%20site%20URL/posts/creating-a-new-theme/</link>
+      <link>/sites/blog650/posts/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>Your%20site%20URL/posts/creating-a-new-theme/</guid>
+      <guid>/sites/blog650/posts/creating-a-new-theme/</guid>
       <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
     
     <item>
       <title>Migrate to Hugo from Jekyll</title>
-      <link>Your%20site%20URL/posts/migrate-from-jekyll/</link>
+      <link>/sites/blog650/posts/migrate-from-jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>Your%20site%20URL/posts/migrate-from-jekyll/</guid>
+      <guid>/sites/blog650/posts/migrate-from-jekyll/</guid>
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
@@ -45,10 +51,10 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
     
     <item>
       <title>Hello R Markdown</title>
-      <link>Your%20site%20URL/post/2015-07-23-r-rmarkdown/</link>
+      <link>/sites/blog650/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>Your%20site%20URL/post/2015-07-23-r-rmarkdown/</guid>
+      <guid>/sites/blog650/post/2015-07-23-r-rmarkdown/</guid>
       <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
@@ -56,10 +62,10 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     
     <item>
       <title>About Hugo</title>
-      <link>Your%20site%20URL/about/</link>
+      <link>/sites/blog650/about/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>Your%20site%20URL/about/</guid>
+      <guid>/sites/blog650/about/</guid>
       <description>Hugo is a static site engine written in Go.
 It makes use of a variety of open source projects including:
  Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.</description>
@@ -67,20 +73,20 @@ It makes use of a variety of open source projects including:
     
     <item>
       <title>(Hu)go Template Primer</title>
-      <link>Your%20site%20URL/posts/goisforlovers/</link>
+      <link>/sites/blog650/posts/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>Your%20site%20URL/posts/goisforlovers/</guid>
+      <guid>/sites/blog650/posts/goisforlovers/</guid>
       <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
 This document is a brief primer on using go templates.</description>
     </item>
     
     <item>
       <title>Getting Started with Hugo</title>
-      <link>Your%20site%20URL/posts/hugoisforlovers/</link>
+      <link>/sites/blog650/posts/hugoisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>Your%20site%20URL/posts/hugoisforlovers/</guid>
+      <guid>/sites/blog650/posts/hugoisforlovers/</guid>
       <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo
