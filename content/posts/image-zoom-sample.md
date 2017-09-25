@@ -27,9 +27,9 @@ R Studio commands:
 Lahman database queries and results:
 
 > df<-Batting%>%
-+   group_by(playerID)%>%
-+   summarize(career_HR=sum(HR),career_SO=sum(SO))%>%
-+   filter(career_HR>=400)
+group_by(playerID)%>%
+summarize(career_HR=sum(HR),career_SO=sum(SO))%>%
+filter(career_HR>=400)
 > df
 # A tibble: 55 x 3
     playerID career_HR career_SO
@@ -51,7 +51,7 @@ Lahman database queries and results:
 [15] "nameLast"     "nameGiven"    "weight"       "height"       "bats"         "throws"       "debut"       
 [22] "finalGame"    "retroID"      "bbrefID"      "deathDate"    "birthDate"   
 > inner_join(df,Master,by=c("playerID"))%>%
-+   select(nameFirst, nameLast,career_HR,career_SO)
+select(nameFirst, nameLast,career_HR,career_SO)
 # A tibble: 55 x 4
    nameFirst nameLast career_HR career_SO
        <chr>    <chr>     <int>     <int>
@@ -67,14 +67,14 @@ Lahman database queries and results:
 10    Carlos  Delgado       473      1745
 # ... with 45 more rows
 > HR_vs_SO<-inner_join(df,Master,by=c("playerID"))%>%
-+   select(nameFirst, nameLast,career_HR,career_SO)
+select(nameFirst, nameLast,career_HR,career_SO)
 > ggplot()+
-+   geom_point(data=HR_vs_SO,aes(x=career_SO,y=career_HR))
+geom_point(data=HR_vs_SO,aes(x=career_SO,y=career_HR))
 > > g<-ggplot()+
-+   geom_point_interactive(data=HR_vs_SO,aes(x=career_SO,y=career_HR,tooltip=nameLast))+
-+   ggtitle("Career Homeruns vs. Strikeouts for Great Hitters")+
-+   xlab("Career Strikeouts")+
-+   ylab("Career Homeruns")
+geom_point_interactive(data=HR_vs_SO,aes(x=career_SO,y=career_HR,tooltip=nameLast))+
+ggtitle("Career Homeruns vs. Strikeouts for Great Hitters")+
+xlab("Career Strikeouts")+
+ylab("Career Homeruns")
 > 
 > ggiraph(code=print(g))
 > paste(HR_vs_SO$nameFirst,HR_vs_SO$nameLast)
@@ -109,14 +109,14 @@ Lahman database queries and results:
 10    Carlos  Delgado       473      1745 Carlos Delgado
 # ... with 45 more rows
 > g<-ggplot()+
-+   geom_point_interactive(data=HR_vs_SO,aes(x=career_SO,y=career_HR,tooltip=name))+
-+   ggtitle("Career Homeruns vs. Strikeouts for Great Hitters")+
-+   xlab("Career Strikeouts")+
-+   ylab("Career Homeruns")
+geom_point_interactive(data=HR_vs_SO,aes(x=career_SO,y=career_HR,tooltip=name))+
+ggtitle("Career Homeruns vs. Strikeouts for Great Hitters")+
+xlab("Career Strikeouts")+
+ylab("Career Homeruns")
 > ggiraph(code=print(g))
 > g<-ggplot()+
-+   geom_point_interactive(data=HR_vs_SO,aes(x=career_SO,y=career_HR,tooltip=name,data_id=nameLast))+
-+   ggtitle("Career Homeruns vs. Strikeouts for Great Hitters")+
-+   xlab("Career Strikeouts")+
-+   ylab("Career Homeruns")
+geom_point_interactive(data=HR_vs_SO,aes(x=career_SO,y=career_HR,tooltip=name,data_id=nameLast))+
+ggtitle("Career Homeruns vs. Strikeouts for Great Hitters")+
+xlab("Career Strikeouts")+
+ylab("Career Homeruns")
 > ggiraph(code=print(g),hover_css="fill:white;stroke:black")
