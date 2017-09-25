@@ -14,24 +14,13 @@ copyright = "&copy; Copyright notice"
   instagram = "Your Instagram username"
   googleplus = "Your Google+ account URL" # https://plus.google.com/u/0/xxxxxx
   github = "Your GitHub username"
-  npm = "Your npm username"
-  codepen = "Your CodePen username"
-  dribbble = "Your Dribbble username"
-  fivehundredpx = "Your 500px username" # 500px
-  flickr = "Your Flickr username"
-  pinterest = "Your Pinterest username"
-  tumblr = "Your Tumblr username"
-  vimeo = "Your Vimeo username"
-  youtube = "Your YouTube username"
-  linkedin = "Your LinkedIn username"
-  # Disqus shortname
-  disqus = ""
-  # Google Analytics API key.
+   linkedin = "judy-minichelli-12035b136"
+    # Google Analytics API key.
   ga_api_key = "Your Google Analytics tracking id"
   author = "Judy Minichelli"
   authorwebsite = "example.com"
   avatar = "/path/to/avatar"
-  contact = "Your contact link (ex. mailto:foo@example.com)"
+  contact = "mailto:jminic81@lakers.mercyhurst.edu)"
   bio = "First-year Data Science student"
   # Short subtitle/tagline. This is displayed in the header.
   subtitle = "Data Science"
