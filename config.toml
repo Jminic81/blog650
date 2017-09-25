@@ -1,5 +1,5 @@
 theme = "hugo_theme_pickles"
-baseurl = "https://app.netlify.com/sites/blog650"
+baseurl = "https://blog650.netlify.com/"
 languageCode = "en-us"
 Title = "blog650"
 # Copyright notice. This is displayer in the footer.
