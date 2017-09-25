@@ -16,7 +16,7 @@ copyright = "&copy; Copyright notice"
   ga_api_key = "Your Google Analytics tracking id"
   author = "Judy Minichelli"
   authorwebsite = "example.com"
-  avatar = "/content/Judypic.jpeg"
+  avatar = "/content/posts/images/Judypic.jpeg"
   contact = "mailto:jminic81@lakers.mercyhurst.edu)"
   bio = "First-year Data Science student"
   # Short subtitle/tagline. This is displayed in the header.
