@@ -9,8 +9,7 @@ copyright = "&copy; Copyright notice"
   paginate = 10
   # Social accounts. Link to these accounts are displayed in the header and
   # footer
-  googleplus = "Your Google+ account URL" # https://plus.google.com/u/0/xxxxxx
-  github = "Jminic81"
+   github = "Jminic81"
    linkedin = "judy-minichelli-12035b136"
     # Google Analytics API key.
   ga_api_key = "Your Google Analytics tracking id"
