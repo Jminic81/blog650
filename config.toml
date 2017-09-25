@@ -9,17 +9,14 @@ copyright = "&copy; Copyright notice"
   paginate = 10
   # Social accounts. Link to these accounts are displayed in the header and
   # footer
-  twitter = "Your Twitter username"
-  facebook = "Your Facebook username"
-  instagram = "Your Instagram username"
   googleplus = "Your Google+ account URL" # https://plus.google.com/u/0/xxxxxx
-  github = "Your GitHub username"
+  github = "Jminic81"
    linkedin = "judy-minichelli-12035b136"
     # Google Analytics API key.
   ga_api_key = "Your Google Analytics tracking id"
   author = "Judy Minichelli"
   authorwebsite = "example.com"
-  avatar = "/path/to/avatar"
+  avatar = "/content/Judypic.jpeg"
   contact = "mailto:jminic81@lakers.mercyhurst.edu)"
   bio = "First-year Data Science student"
   # Short subtitle/tagline. This is displayed in the header.

@@ -8,11 +8,11 @@ weight: 10
 
 How to use an R dot plot to display Lahman database stats.
 
-Comparing number of career homeruns vs. strike outs for all Players (Figure 1). 
+Comparing number of career homeruns vs. strike outs for all Players.  
 
-Dot plot was formated so that hover feature produces first and last name of player at each data point (Figure 2, 3)
+Dot plot was formated so that hover feature produces first and last name of player at each data point
 
-R Studio commands: 
+First, install packages:  Lahman, dplyr, ggplot2 and ggiraph and bring them in with libary: 
 
 > install.packages("Lahman")
 > library("dplyr", lib.loc="~/R/win-library/3.4")
@@ -24,13 +24,13 @@ R Studio commands:
 > library(ggplot2)
 > library(ggiraph)
 
-Lahman database queries and results:
+Then build Lahman database queries and view table results:
 
-> df<-Batting%>%
+>df<-Batting%>%
 group_by(playerID)%>%
 summarize(career_HR=sum(HR),career_SO=sum(SO))%>%
 filter(career_HR>=400)
-> df
+>df
 # A tibble: 55 x 3
     playerID career_HR career_SO
        <chr>     <int>     <int>
@@ -45,12 +45,12 @@ filter(career_HR>=400)
  9 dawsoan01       438      1509
 10 delgaca01       473      1745
 # ... with 45 more rows
-> colnames(Master)
+>colnames(Master)
  [1] "playerID"     "birthYear"    "birthMonth"   "birthDay"     "birthCountry" "birthState"   "birthCity"   
  [8] "deathYear"    "deathMonth"   "deathDay"     "deathCountry" "deathState"   "deathCity"    "nameFirst"   
 [15] "nameLast"     "nameGiven"    "weight"       "height"       "bats"         "throws"       "debut"       
 [22] "finalGame"    "retroID"      "bbrefID"      "deathDate"    "birthDate"   
-> inner_join(df,Master,by=c("playerID"))%>%
+>inner_join(df,Master,by=c("playerID"))%>%
 select(nameFirst, nameLast,career_HR,career_SO)
 # A tibble: 55 x 4
    nameFirst nameLast career_HR career_SO
@@ -66,18 +66,18 @@ select(nameFirst, nameLast,career_HR,career_SO)
  9     Andre   Dawson       438      1509
 10    Carlos  Delgado       473      1745
 # ... with 45 more rows
-> HR_vs_SO<-inner_join(df,Master,by=c("playerID"))%>%
+>HR_vs_SO<-inner_join(df,Master,by=c("playerID"))%>%
 select(nameFirst, nameLast,career_HR,career_SO)
 > ggplot()+
 geom_point(data=HR_vs_SO,aes(x=career_SO,y=career_HR))
-> > g<-ggplot()+
+>g<-ggplot()+
 geom_point_interactive(data=HR_vs_SO,aes(x=career_SO,y=career_HR,tooltip=nameLast))+
 ggtitle("Career Homeruns vs. Strikeouts for Great Hitters")+
 xlab("Career Strikeouts")+
 ylab("Career Homeruns")
 > 
-> ggiraph(code=print(g))
-> paste(HR_vs_SO$nameFirst,HR_vs_SO$nameLast)
+>ggiraph(code=print(g))
+>paste(HR_vs_SO$nameFirst,HR_vs_SO$nameLast)
  [1] "Hank Aaron"        "Jeff Bagwell"      "Ernie Banks"       "Adrian Beltre"    
  [5] "Carlos Beltran"    "Barry Bonds"       "Miguel Cabrera"    "Jose Canseco"     
  [9] "Andre Dawson"      "Carlos Delgado"    "Adam Dunn"         "Darrell Evans"    
@@ -92,8 +92,8 @@ ylab("Career Homeruns")
 [45] "Duke Snider"       "Alfonso Soriano"   "Sammy Sosa"        "Willie Stargell"  
 [49] "Mark Teixeira"     "Frank Thomas"      "Jim Thome"         "Billy Williams"   
 [53] "Ted Williams"      "Dave Winfield"     "Carl Yastrzemski" 
-> HR_vs_SO$name<-paste(HR_vs_SO$nameFirst,HR_vs_SO$nameLast)
-> HR_vs_SO
+>HR_vs_SO$name<-paste(HR_vs_SO$nameFirst,HR_vs_SO$nameLast)
+>HR_vs_SO
 # A tibble: 55 x 5
    nameFirst nameLast career_HR career_SO           name
        <chr>    <chr>     <int>     <int>          <chr>
@@ -108,15 +108,15 @@ ylab("Career Homeruns")
  9     Andre   Dawson       438      1509   Andre Dawson
 10    Carlos  Delgado       473      1745 Carlos Delgado
 # ... with 45 more rows
-> g<-ggplot()+
+>g<-ggplot()+
 geom_point_interactive(data=HR_vs_SO,aes(x=career_SO,y=career_HR,tooltip=name))+
 ggtitle("Career Homeruns vs. Strikeouts for Great Hitters")+
 xlab("Career Strikeouts")+
 ylab("Career Homeruns")
-> ggiraph(code=print(g))
-> g<-ggplot()+
+>ggiraph(code=print(g))
+>g<-ggplot()+
 geom_point_interactive(data=HR_vs_SO,aes(x=career_SO,y=career_HR,tooltip=name,data_id=nameLast))+
 ggtitle("Career Homeruns vs. Strikeouts for Great Hitters")+
 xlab("Career Strikeouts")+
 ylab("Career Homeruns")
-> ggiraph(code=print(g),hover_css="fill:white;stroke:black")
+>ggiraph(code=print(g),hover_css="fill:white;stroke:black")
