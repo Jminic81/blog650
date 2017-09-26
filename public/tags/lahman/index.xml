@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lahman on blog650</title>
-    <link>/tags/lahman/</link>
+    <link>https://blog650.netlify.com/tags/lahman/</link>
     <description>Recent content in Lahman on blog650</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright notice</copyright>
     <lastBuildDate>Tue, 26 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/lahman/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog650.netlify.com/tags/lahman/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>bar chart</title>
-      <link>/post/bar-chart/</link>
+      <link>https://blog650.netlify.com/post/bar-chart/</link>
       <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/bar-chart/</guid>
+      <guid>https://blog650.netlify.com/post/bar-chart/</guid>
       <description>How to use a bar chart to display selected Lahman baseball database statistics
 First, install packages: Lahman, dplyr, and ggplot2. Then bring them in with libary:
 library(Lahman)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(ggplot2)In this example, we show total number of homeruns for each team during the 1980 season.</description>
@@ -25,10 +25,10 @@ library(Lahman)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;
     
     <item>
       <title>Dot Plot</title>
-      <link>/post/dot-plot/</link>
+      <link>https://blog650.netlify.com/post/dot-plot/</link>
       <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/dot-plot/</guid>
+      <guid>https://blog650.netlify.com/post/dot-plot/</guid>
       <description>How to use an R dot plot with special features to display selected Lahman baseball database statistics
 In this example, we show number of career homeruns vs. strike outs for all players. The dot plot is formatted so players first and last names are displayed when you hover over each dot!
 First, install packages; Lahman, dplyr, ggplot2 and ggiraph. Then bring them in with libary:</description>
