@@ -1,5 +1,5 @@
 theme = "hugo_theme_pickles"
-baseurl = "https://blog650.netlify.com/"
+baseurl = "https://blog650.netlify.com"
 languageCode = "en-us"
 Title = "blog650"
 # Copyright notice. This is displayer in the footer.
@@ -15,7 +15,7 @@ copyright = "&copy; Copyright notice"
   ga_api_key = "Your Google Analytics tracking id"
   author = "Judy Minichelli"
   authorwebsite = "example.com"
-  avatar = "Judypic.jpeg"
+  avatar = "/content/posts/images/Judypic.jpeg"
   contact = "mailto:jminic81@lakers.mercyhurst.edu)"
   bio = "First-year Data Science student"
   # Short subtitle/tagline. This is displayed in the header.
