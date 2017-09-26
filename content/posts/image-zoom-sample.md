@@ -10,7 +10,7 @@ How to use an R dot plot to display Lahman database stats.
 
 Comparing number of career homeruns vs. strike outs for all Players.  
 
-Dot plot was formated so that hover feature produces first and last name of player at each data point
+Dot plot was formated so that hover feature produces first and last name of player at each data point.
 
 First, install packages:  Lahman, dplyr, ggplot2 and ggiraph and bring them in with libary: 
 
@@ -24,12 +24,16 @@ First, install packages:  Lahman, dplyr, ggplot2 and ggiraph and bring them in w
 > library(ggplot2)
 > library(ggiraph)
 
-Then build Lahman database queries and view table results:
+Then build Lahman database queries and view table results for specific categories.
+
+Greater than Career homeruns vs. strikeouts:
 
 >df<-Batting%>%
 group_by(playerID)%>%
 summarize(career_HR=sum(HR),career_SO=sum(SO))%>%
+
 filter(career_HR>=400)
+
 >df
 # A tibble: 55 x 3
     playerID career_HR career_SO
