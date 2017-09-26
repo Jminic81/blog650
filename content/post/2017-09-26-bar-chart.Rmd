@@ -1,0 +1,46 @@
+---
+title: bar chart
+author: Judy Minichelli
+date: '2017-09-26'
+slug: bar-chart
+categories:
+  - R
+tags:
+  - Lahman
+  - R Markdown
+---
+
+How to use a bar chart to display selected Lahman baseball database statistics
+
+First, install packages: Lahman, dplyr, and ggplot2.  Then bring them in with libary: 
+
+```{r}
+library(Lahman)
+library(dplyr)
+library(ggplot2)
+```
+
+In this example, we show total number of homeruns for each team during the 1980 season.
+
+```{r}
+df<-Teams%>%
+  filter(yearID==1980)%>%
+  select(name,HR)%>%
+  arrange(HR)
+```
+
+
+
+```{r}
+df$name<-factor(df$name,levels=df$name)
+```
+
+
+
+```{r}
+ggplot()+
+  geom_bar(data=df,aes(x=name,y=HR),stat="identity", color="blue", fill="white")+
+  coord_flip()
+```
+
+
