@@ -44,7 +44,7 @@ select(nameFirst, nameLast,career_HR,career_SO)
 Paste the first and last name columns together so the full name is displayed at each "dot" on the plot:
 
 ```{r}
->HR_vs_SO$name<-paste(HR_vs_SO$nameFirst,HR_vs_SO$nameLast)
+HR_vs_SO$name<-paste(HR_vs_SO$nameFirst,HR_vs_SO$nameLast)
 ```
 
 Now display the dot plot:
@@ -60,6 +60,6 @@ ylab("Career Homeruns")
 Last, change the color scheme:
 
 ```{r}
->ggiraph(code=print(g),hover_css="fill:white;stroke:black")
+ggiraph(code=print(g),hover_css="fill:white;stroke:black")
 ```
 
