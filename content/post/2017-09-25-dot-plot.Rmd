@@ -9,13 +9,11 @@ tags:
   - R Markdown
   - Lahman
 ---
-How to use an R dot plot to display Lahman database stats.
+How to use an R dot plot with special features to display selected Lahman baseball database statistics
 
-Comparing number of career homeruns vs. strike outs for all Players.
+In this example, we show number of career homeruns vs. strike outs for all players.  The dot plot is formatted so players first and last names are displayed when you hover over each dot!
 
-Dot plot was formated so that hover feature produces first and last name of player at each data point.
-
-First, install packages:  Lahman, dplyr, ggplot2 and ggiraph and bring them in with libary: 
+First, install packages; Lahman, dplyr, ggplot2 and ggiraph.  Then  bring them in with libary: 
 
 ```{r}
 library(Lahman)
@@ -24,7 +22,7 @@ library(ggplot2)
 library(ggiraph)
 ```
 
-Then build Lahman database queries and view table results for specific categories.  Start with greater than 400 career homeruns vs. strikeouts:
+Then build Lahman database query and view table results for specific categories.  Start with greater than 400 career homeruns vs. strikeouts:
 
 ```{r}
 df<-Batting%>%
@@ -37,8 +35,8 @@ filter(career_HR>=400)
 Display players first and last name instead of player ID:
 
 ```{r}
-inner_join(df,Master,by=c("playerID"))%>%
-select(nameFirst, nameLast,career_HR,career_SO)
+HR_vs_SO<-inner_join(df,Master,by=c("playerID"))%>%
+  select(nameFirst,nameLast,career_HR,career_SO)
 ```
 
 Paste the first and last name columns together so the full name is displayed at each "dot" on the plot:
