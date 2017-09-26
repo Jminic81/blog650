@@ -3,138 +3,75 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/sites/blog650/posts/image-zoom-sample/</loc>
-    <lastmod>2017-09-22T00:00:00+00:00</lastmod>
+    <loc>https://blog650.netlify.com/post/bar-chart/</loc>
+    <lastmod>2017-09-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/sites/blog650/posts/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <loc>https://blog650.netlify.com/post/dot-plot/</loc>
+    <lastmod>2017-09-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/sites/blog650/posts/migrate-from-jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/sites/blog650/post/2015-07-23-r-rmarkdown/</loc>
+    <loc>https://blog650.netlify.com/post/2015-07-23-r-rmarkdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/sites/blog650/about/</loc>
+    <loc>https://blog650.netlify.com/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/sites/blog650/posts/goisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/sites/blog650/posts/hugoisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/sites/blog650/categories/</loc>
+    <loc>https://blog650.netlify.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/sites/blog650/tags/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://blog650.netlify.com/tags/lahman/</loc>
+    <lastmod>2017-09-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/sites/blog650/categories/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/sites/blog650/tags/go/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/sites/blog650/tags/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/sites/blog650/categories/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/sites/blog650/tags/hugo/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/sites/blog650/tags/plot/</loc>
+    <loc>https://blog650.netlify.com/tags/plot/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/sites/blog650/posts/</loc>
-    <lastmod>2017-09-22T00:00:00+00:00</lastmod>
+    <loc>https://blog650.netlify.com/post/</loc>
+    <lastmod>2017-09-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/sites/blog650/post/</loc>
+    <loc>https://blog650.netlify.com/categories/r/</loc>
+    <lastmod>2017-09-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog650.netlify.com/tags/r-markdown/</loc>
+    <lastmod>2017-09-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog650.netlify.com/tags/regression/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/sites/blog650/categories/r/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <loc>https://blog650.netlify.com/tags/</loc>
+    <lastmod>2017-09-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/sites/blog650/tags/r-markdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/sites/blog650/tags/regression/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/sites/blog650/tags/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/sites/blog650/tags/templates/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/sites/blog650/tags/themes/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/sites/blog650/</loc>
-    <lastmod>2017-09-22T00:00:00+00:00</lastmod>
+    <loc>https://blog650.netlify.com/</loc>
+    <lastmod>2017-09-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
