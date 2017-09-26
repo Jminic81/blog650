@@ -14,7 +14,8 @@ tags:
 
 <p>How to use a bar chart to display selected Lahman baseball database statistics</p>
 <p>First, install packages: Lahman, dplyr, and ggplot2. Then bring them in with libary:</p>
-<pre class="r"><code>library(Lahman)
+<pre class="r"><code>library(devtools)
+library(Lahman)
 library(dplyr)</code></pre>
 <pre><code>## 
 ## Attaching package: &#39;dplyr&#39;</code></pre>
@@ -25,12 +26,14 @@ library(dplyr)</code></pre>
 ## 
 ##     intersect, setdiff, setequal, union</code></pre>
 <pre class="r"><code>library(ggplot2)</code></pre>
-<p>In this example, we show total number of homeruns for each team during the 1980 season.</p>
+<p>In this example, we show total number of homeruns for each team during the 1980 season. The results are arranged to dsiplay in decreasing order.</p>
 <pre class="r"><code>df&lt;-Teams%&gt;%
   filter(yearID==1980)%&gt;%
   select(name,HR)%&gt;%
   arrange(HR)</code></pre>
+<p>Add factor.</p>
 <pre class="r"><code>df$name&lt;-factor(df$name,levels=df$name)</code></pre>
+<p>Use ggplot to display the bar chart where the axes are flipped (bars are horizontal instead of vertical) to make the team names readable from top to bottom rather all smashed together in a single row. Change the default to display the bars in white with blue outline instead of the standard solid black.</p>
 <pre class="r"><code>ggplot()+
   geom_bar(data=df,aes(x=name,y=HR),stat=&quot;identity&quot;, color=&quot;blue&quot;, fill=&quot;white&quot;)+
   coord_flip()</code></pre>
