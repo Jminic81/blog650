@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Histogram on blog650</title>
-    <link>/tags/histogram/</link>
+    <link>https://blog650.netlify.com/tags/histogram/</link>
     <description>Recent content in Histogram on blog650</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright notice</copyright>
     <lastBuildDate>Tue, 26 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/histogram/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog650.netlify.com/tags/histogram/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>histogram</title>
-      <link>/posts/histogram/</link>
+      <link>https://blog650.netlify.com/posts/histogram/</link>
       <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/posts/histogram/</guid>
+      <guid>https://blog650.netlify.com/posts/histogram/</guid>
       <description>How to use a histogram to display selected Lahman baseball database statistics
 First, install packages: Lahman, dplyr, and ggplot2. Then bring them in with libary:
 library(Lahman)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(ggplot2)In this example, we extract player weights from the Lahman baseball database.</description>
