@@ -18,6 +18,7 @@ First, install packages: Lahman, dplyr, and ggplot2.  Then bring them in with li
 library(Lahman)
 library(dplyr)
 library(ggplot2)
+library(ggiraph)
 ```
 
 In this example, we show total number of homeruns for each team during the 1980 season.  The results are arranged to dsiplay in decreasing order.
@@ -29,7 +30,7 @@ df<-Teams%>%
   arrange(HR)
 ```
 
-Add factor.
+Assign team name as the factor, to be the variable in the graph.
 
 ```{r}
 df$name<-factor(df$name,levels=df$name)
@@ -41,6 +42,21 @@ Use ggplot to display the bar chart where the axes are flipped (bars are horizon
 ggplot()+
   geom_bar(data=df,aes(x=name,y=HR),stat="identity", color="blue", fill="white")+
   coord_flip()
+```
+Now, use ggplot to make the graph interactive.
+
+```{r}
+g<-ggplot()+
+  geom_bar_interactive(data=df,aes(x=name,y=HR, tooltip=HR, data_id=name),stat="identity",color="blue",fill="white")+
+  coord_flip()+
+  ggtitle("1980 Team Homeruns")+
+  ylab("Homeruns")+
+  xlab("Team")
+```
+Last, use ggiraph to allow the hover feature and more contrasting colors to highlight individual data points.
+
+```{r}
+ggiraph(code=print(g),hover_css="fill:red;stroke:black")
 ```
 
 
