@@ -1,0 +1,48 @@
+---
+title: Line Graph (time series)
+author: Judy
+date: '2017-09-27'
+slug: line-graph-time-series
+categories:
+  - R
+tags:
+  - line gragh
+  - time serie
+  - R Markdown
+  - plot
+  - Lahman
+---
+How to use a line graph to display changes over time in selected Lahman baseball database statistics.
+
+First, install packages: Lahman, dplyr, and ggplot2.  Then bring them in with libary: 
+
+First, install packages; dev tools, Lahman, dplyr, ggplot2 and ggiraph.  Then  bring them in with libary: 
+
+```{r}
+library(Lahman)
+library(dplyr)
+library(ggplot2)
+library(ggiraph)
+```
+In this example, we extract season homerun totals for Babe Ruth from the Lahman baseball database.  
+
+```{r}
+df<-Batting%>%
+  filter(playerID=='ruthba01')%>%
+  select(yearID,HR)
+```
+Then we use ggplot to visualize the data.  Years are on the x-axis and homeruns are on the y-axis.  The graph is made interactive for homerun data using tooltip.
+
+```{r}
+g<-ggplot()+
+  geom_line(data=df,aes(x=yearID,y=HR))+
+  geom_point_interactive(data=df,aes(x=yearID,y=HR,tooltip=HR,data_id=yearID))
+```
+The hover feature with selected color scheme in ggiraph is used to display data at each of the points. 
+
+```{r}
+ggiraph(code=print(g),hover_css="fill:white;stroke:red")
+```
+
+  
+  
