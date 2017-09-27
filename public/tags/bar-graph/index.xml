@@ -23,5 +23,16 @@ First, install packages: Lahman, dplyr, and ggplot2. Then bring them in with lib
 library(Lahman)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(ggplot2)In this example, we extract player weights from the Lahman baseball database.</description>
     </item>
     
+    <item>
+      <title>histogram</title>
+      <link>/posts/histogram/</link>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/histogram/</guid>
+      <description>How to use a histogram to display selected Lahman baseball database statistics
+First, install packages: Lahman, dplyr, and ggplot2. Then bring them in with libary:
+library(Lahman)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(ggplot2)In this example, we extract player weights from the Lahman baseball database.</description>
+    </item>
+    
   </channel>
 </rss>

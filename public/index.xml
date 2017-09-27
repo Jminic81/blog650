@@ -24,6 +24,17 @@ library(Lahman)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;
     </item>
     
     <item>
+      <title>bar chart</title>
+      <link>/posts/bar-chart/</link>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/bar-chart/</guid>
+      <description>How to use a bar chart to display selected Lahman baseball database statistics
+First, install packages: Lahman, dplyr, and ggplot2. Then bring them in with libary:
+library(Lahman)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(ggplot2)In this example, we show total number of homeruns for each team during the 1980 season.</description>
+    </item>
+    
+    <item>
       <title>histogram</title>
       <link>/post/histogram/</link>
       <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
@@ -35,11 +46,33 @@ library(Lahman)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;
     </item>
     
     <item>
+      <title>histogram</title>
+      <link>/posts/histogram/</link>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/histogram/</guid>
+      <description>How to use a histogram to display selected Lahman baseball database statistics
+First, install packages: Lahman, dplyr, and ggplot2. Then bring them in with libary:
+library(Lahman)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(ggplot2)In this example, we extract player weights from the Lahman baseball database.</description>
+    </item>
+    
+    <item>
       <title>Dot Plot</title>
       <link>/post/dot-plot/</link>
       <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/dot-plot/</guid>
+      <description>How to use an R dot plot with special features to display selected Lahman baseball database statistics
+In this example, we show number of career homeruns vs. strike outs for all players. The dot plot is formatted so players first and last names are displayed when you hover over each dot!
+First, install packages; dev tools, Lahman, dplyr, ggplot2 and ggiraph. Then bring them in with libary:</description>
+    </item>
+    
+    <item>
+      <title>Dot Plot</title>
+      <link>/posts/dot-plot/</link>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/dot-plot/</guid>
       <description>How to use an R dot plot with special features to display selected Lahman baseball database statistics
 In this example, we show number of career homeruns vs. strike outs for all players. The dot plot is formatted so players first and last names are displayed when you hover over each dot!
 First, install packages; dev tools, Lahman, dplyr, ggplot2 and ggiraph. Then bring them in with libary:</description>

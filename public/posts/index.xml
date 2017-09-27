@@ -2,75 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on blog650</title>
-    <link>/sites/blog650/posts/</link>
+    <link>/posts/</link>
     <description>Recent content in Posts on blog650</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright notice</copyright>
-    <lastBuildDate>Fri, 22 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/sites/blog650/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>R Dot Plot</title>
-      <link>/sites/blog650/posts/image-zoom-sample/</link>
-      <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
+      <title>bar chart</title>
+      <link>/posts/bar-chart/</link>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/sites/blog650/posts/image-zoom-sample/</guid>
-      <description>How to use an R dot plot to display Lahman database stats.
-Comparing number of career homeruns vs. strike outs for all Players (Figure 1).
-Dot plot was formated so that hover feature produces first and last name of player at each data point (Figure 2, 3)
-R:image=&amp;ldquo;posts/images/&amp;ldquo;fig1.jpg&amp;rdquo; R:image=&amp;ldquo;posts/images/&amp;ldquo;fig2.jpg&amp;rdquo; R:image=&amp;ldquo;posts/images/&amp;ldquo;fig3.jpg&amp;rdquo;
-R Studio commands:
- install.packages(&amp;ldquo;Lahman&amp;rdquo;) library(&amp;ldquo;dplyr&amp;rdquo;, lib.loc=&amp;rdquo;~/R/win-library/3.4&amp;rdquo;) install.packages(&amp;ldquo;ggplot2&amp;rdquo;) install.packages(&amp;ldquo;ggiraph&amp;rdquo;)
-library(Lahman) library(dplyr) library(ggplot2) library(ggiraph)
-df&amp;lt;-Batting%&amp;gt;% + group_by(playerID)%&amp;gt;% + summarize(career_HR=sum(HR),career_SO=sum(SO))%&amp;gt;% + filter(career_HR&amp;gt;=400) df</description>
+      <guid>/posts/bar-chart/</guid>
+      <description>How to use a bar chart to display selected Lahman baseball database statistics
+First, install packages: Lahman, dplyr, and ggplot2. Then bring them in with libary:
+library(Lahman)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(ggplot2)In this example, we show total number of homeruns for each team during the 1980 season.</description>
     </item>
     
     <item>
-      <title>Creating a New Theme</title>
-      <link>/sites/blog650/posts/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <title>histogram</title>
+      <link>/posts/histogram/</link>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/sites/blog650/posts/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+      <guid>/posts/histogram/</guid>
+      <description>How to use a histogram to display selected Lahman baseball database statistics
+First, install packages: Lahman, dplyr, and ggplot2. Then bring them in with libary:
+library(Lahman)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(ggplot2)In this example, we extract player weights from the Lahman baseball database.</description>
     </item>
     
     <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>/sites/blog650/posts/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      <title>Dot Plot</title>
+      <link>/posts/dot-plot/</link>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/sites/blog650/posts/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>/sites/blog650/posts/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/sites/blog650/posts/goisforlovers/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>/sites/blog650/posts/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/sites/blog650/posts/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+      <guid>/posts/dot-plot/</guid>
+      <description>How to use an R dot plot with special features to display selected Lahman baseball database statistics
+In this example, we show number of career homeruns vs. strike outs for all players. The dot plot is formatted so players first and last names are displayed when you hover over each dot!
+First, install packages; dev tools, Lahman, dplyr, ggplot2 and ggiraph. Then bring them in with libary:</description>
     </item>
     
   </channel>
