@@ -15,7 +15,7 @@ In this example, we show number of career homeruns vs. strike outs for all playe
 
 First, install packages; dev tools, Lahman, dplyr, ggplot2 and ggiraph.  Then  bring them in with libary: 
 
-```{r}
+```{r warning=FALSE, message = FALSE}
 library(Lahman)
 library(dplyr)
 library(ggplot2)

@@ -44,7 +44,8 @@ df&amp;lt;-Teams%&amp;gt;%filter(yearID==1980)%&amp;gt;%select(name,HR)%&amp;g
       <guid>https://blog650.netlify.com/posts/histogram/</guid>
       <description>How to use a histogram to display selected Lahman baseball database statistics
 First, install packages: Lahman, dplyr, and ggplot2. Then bring them in with libary:
-library(Lahman)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(ggplot2)In this example, we extract player weights from the Lahman baseball database.</description>
+library(Lahman)library(dplyr)library(ggplot2)In this example, we extract player weights from the Lahman baseball database.
+df&amp;lt;-Master%&amp;gt;%filter(!is.na(weight))%&amp;gt;%select(weight)Use ggplot to display the resulting distribution of all player weights. Change the bar color scheme from the default solid black to white with blue outline. Change the bin to improve the look of the graph, so there is enough white space surrounding the bars.</description>
     </item>
     
     <item>

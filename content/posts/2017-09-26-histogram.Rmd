@@ -16,7 +16,7 @@ How to use a histogram to display selected Lahman baseball database statistics
 
 First, install packages: Lahman, dplyr, and ggplot2.  Then bring them in with libary: 
 
-```{r}
+```{r warning=FALSE, message = FALSE}
 library(Lahman)
 library(dplyr)
 library(ggplot2)
