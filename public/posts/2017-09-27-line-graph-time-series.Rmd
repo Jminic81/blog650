@@ -7,18 +7,16 @@ categories:
   - R
 tags:
   - line gragh
-  - time serie
+  - time series
   - R Markdown
   - plot
   - Lahman
 ---
 How to use a line graph to display changes over time in selected Lahman baseball database statistics.
 
-First, install packages: Lahman, dplyr, and ggplot2.  Then bring them in with libary: 
+First, install packages: Lahman, dplyr, ggplot2, and ggiraph.  Then bring them in with libary: 
 
-First, install packages; dev tools, Lahman, dplyr, ggplot2 and ggiraph.  Then  bring them in with libary: 
-
-```{r}
+```{r warning=FALSE, message = FALSE}          
 library(Lahman)
 library(dplyr)
 library(ggplot2)

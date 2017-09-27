@@ -70,9 +70,9 @@
   </header>
   <div class="c-article__summary">
     How to use a line graph to display changes over time in selected Lahman baseball database statistics.
-First, install packages: Lahman, dplyr, and ggplot2. Then bring them in with libary:
-First, install packages; dev tools, Lahman, dplyr, ggplot2 and ggiraph. Then bring them in with libary:
-library(Lahman)library(dplyr)## ## Attaching package: &#39;dplyr&#39;## The following objects are masked from &#39;package:stats&#39;:## ## filter, lag## The following objects are masked from &#39;package:base&#39;:## ## intersect, setdiff, setequal, unionlibrary(ggplot2)library(ggiraph)In this example, we extract season homerun totals for Babe Ruth from the Lahman baseball database.
+First, install packages: Lahman, dplyr, ggplot2, and ggiraph. Then bring them in with libary:
+library(Lahman)library(dplyr)library(ggplot2)library(ggiraph)In this example, we extract season homerun totals for Babe Ruth from the Lahman baseball database.
+df&lt;-Batting%&gt;%filter(playerID==&#39;ruthba01&#39;)%&gt;%select(yearID,HR)Then we use ggplot to visualize the data. Years are on the x-axis and homeruns are on the y-axis.
   </div>
   
   <a href="/posts/line-graph-time-series/" class="c-article__btn p-list-article__btn">Read more</a></li>
