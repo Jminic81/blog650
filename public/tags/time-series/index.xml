@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Time Series on blog650</title>
+    <title>Time Series on Blog650</title>
     <link>https://blog650.netlify.com/tags/time-series/</link>
-    <description>Recent content in Time Series on blog650</description>
+    <description>Recent content in Time Series on Blog650</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright notice</copyright>
@@ -13,13 +13,13 @@
     
     
     <item>
-      <title>Line Graph (time series)</title>
+      <title>R Line Graph (time series)</title>
       <link>https://blog650.netlify.com/posts/line-graph-time-series/</link>
       <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog650.netlify.com/posts/line-graph-time-series/</guid>
       <description>How to use a line graph to display changes over time in selected Lahman baseball database statistics.
-First, install packages: Lahman, dplyr, ggplot2, and ggiraph. Then bring them in with libary:
+First, install packages: Lahman, dplyr, ggplot2, and ggiraph. Then bring them in with libary.
 library(Lahman)library(dplyr)library(ggplot2)library(ggiraph)In this example, we extract season homerun totals for Babe Ruth from the Lahman baseball database.
 df&amp;lt;-Batting%&amp;gt;%filter(playerID==&amp;#39;ruthba01&amp;#39;)%&amp;gt;%select(yearID,HR)Then we use ggplot to visualize the data. Years are on the x-axis and homeruns are on the y-axis.</description>
     </item>

@@ -1,5 +1,5 @@
 ---
-title: Line Graph (time series)
+title: R Line Graph (time series)
 author: Judy
 date: '2017-09-27'
 slug: line-graph-time-series
@@ -14,7 +14,7 @@ tags:
 ---
 How to use a line graph to display changes over time in selected Lahman baseball database statistics.
 
-First, install packages: Lahman, dplyr, ggplot2, and ggiraph.  Then bring them in with libary: 
+First, install packages: Lahman, dplyr, ggplot2, and ggiraph.  Then bring them in with libary. 
 
 ```{r warning=FALSE, message = FALSE}          
 library(Lahman)

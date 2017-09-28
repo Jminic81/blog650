@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on blog650</title>
+    <title>R on Blog650</title>
     <link>https://blog650.netlify.com/categories/r/</link>
-    <description>Recent content in R on blog650</description>
+    <description>Recent content in R on Blog650</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright notice</copyright>
@@ -13,50 +13,50 @@
     
     
     <item>
-      <title>Line Graph (time series)</title>
+      <title>R Line Graph (time series)</title>
       <link>https://blog650.netlify.com/posts/line-graph-time-series/</link>
       <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog650.netlify.com/posts/line-graph-time-series/</guid>
       <description>How to use a line graph to display changes over time in selected Lahman baseball database statistics.
-First, install packages: Lahman, dplyr, ggplot2, and ggiraph. Then bring them in with libary:
+First, install packages: Lahman, dplyr, ggplot2, and ggiraph. Then bring them in with libary.
 library(Lahman)library(dplyr)library(ggplot2)library(ggiraph)In this example, we extract season homerun totals for Babe Ruth from the Lahman baseball database.
 df&amp;lt;-Batting%&amp;gt;%filter(playerID==&amp;#39;ruthba01&amp;#39;)%&amp;gt;%select(yearID,HR)Then we use ggplot to visualize the data. Years are on the x-axis and homeruns are on the y-axis.</description>
     </item>
     
     <item>
-      <title>bar chart</title>
+      <title>R Bar Chart</title>
       <link>https://blog650.netlify.com/posts/bar-chart/</link>
       <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog650.netlify.com/posts/bar-chart/</guid>
-      <description>How to use a bar chart to display selected Lahman baseball database statistics
-First, install packages: Lahman, dplyr, and ggplot2. Then bring them in with libary:
+      <description>How to use a bar chart to display selected Lahman baseball database statistics.
+First, install packages: Lahman, dplyr, and ggplot2. Then bring them in with libary.
 library(Lahman)library(dplyr)library(ggplot2)library(ggiraph)In this example, we show total number of homeruns for each team during the 1980 season. The results are arranged to dsiplay in decreasing order.
 df&amp;lt;-Teams%&amp;gt;%filter(yearID==1980)%&amp;gt;%select(name,HR)%&amp;gt;%arrange(HR)Assign team name as the factor, to be the variable in the graph.</description>
     </item>
     
     <item>
-      <title>histogram</title>
+      <title>R Histogram</title>
       <link>https://blog650.netlify.com/posts/histogram/</link>
       <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog650.netlify.com/posts/histogram/</guid>
-      <description>How to use a histogram to display selected Lahman baseball database statistics
-First, install packages: Lahman, dplyr, and ggplot2. Then bring them in with libary:
+      <description>How to use a histogram to display selected Lahman baseball database statistics.
+First, install packages: Lahman, dplyr, and ggplot2. Then bring them in with libary.
 library(Lahman)library(dplyr)library(ggplot2)In this example, we extract player weights from the Lahman baseball database.
 df&amp;lt;-Master%&amp;gt;%filter(!is.na(weight))%&amp;gt;%select(weight)Use ggplot to display the resulting distribution of all player weights. Change the bar color scheme from the default solid black to white with blue outline. Change the bin to improve the look of the graph, so there is enough white space surrounding the bars.</description>
     </item>
     
     <item>
-      <title>Dot Plot</title>
+      <title>R Dot Plot</title>
       <link>https://blog650.netlify.com/posts/dot-plot/</link>
       <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog650.netlify.com/posts/dot-plot/</guid>
-      <description>How to use an R dot plot with special features to display selected Lahman baseball database statistics
-In this example, we show number of career homeruns vs. strike outs for all players. The dot plot is formatted so players first and last names are displayed when you hover over each dot!
-First, install packages; dev tools, Lahman, dplyr, ggplot2 and ggiraph. Then bring them in with libary:</description>
+      <description>How to use an R dot plot with special features to display selected Lahman baseball database statistics.
+In this example, we show number of career homeruns vs. strike outs for all players. The dot plot is formatted so players first and last names are displayed when the mouse hovers over each dot.
+First, install packages; dev tools, Lahman, dplyr, ggplot2 and ggiraph. Then bring them in with libary.</description>
     </item>
     
     <item>

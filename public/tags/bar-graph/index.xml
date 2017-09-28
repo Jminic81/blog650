@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bar Graph on blog650</title>
+    <title>Bar Graph on Blog650</title>
     <link>https://blog650.netlify.com/tags/bar-graph/</link>
-    <description>Recent content in Bar Graph on blog650</description>
+    <description>Recent content in Bar Graph on Blog650</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright notice</copyright>
@@ -13,13 +13,13 @@
     
     
     <item>
-      <title>histogram</title>
+      <title>R Histogram</title>
       <link>https://blog650.netlify.com/posts/histogram/</link>
       <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog650.netlify.com/posts/histogram/</guid>
-      <description>How to use a histogram to display selected Lahman baseball database statistics
-First, install packages: Lahman, dplyr, and ggplot2. Then bring them in with libary:
+      <description>How to use a histogram to display selected Lahman baseball database statistics.
+First, install packages: Lahman, dplyr, and ggplot2. Then bring them in with libary.
 library(Lahman)library(dplyr)library(ggplot2)In this example, we extract player weights from the Lahman baseball database.
 df&amp;lt;-Master%&amp;gt;%filter(!is.na(weight))%&amp;gt;%select(weight)Use ggplot to display the resulting distribution of all player weights. Change the bar color scheme from the default solid black to white with blue outline. Change the bin to improve the look of the graph, so there is enough white space surrounding the bars.</description>
     </item>

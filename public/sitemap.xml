@@ -39,6 +39,12 @@
   </url>
   
   <url>
+    <loc>https://blog650.netlify.com/</loc>
+    <lastmod>2017-09-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog650.netlify.com/categories/</loc>
     <priority>0</priority>
   </url>
@@ -105,12 +111,6 @@
   
   <url>
     <loc>https://blog650.netlify.com/tags/time-series/</loc>
-    <lastmod>2017-09-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog650.netlify.com/</loc>
     <lastmod>2017-09-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

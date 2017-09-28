@@ -1,5 +1,5 @@
 ---
-title: histogram
+title: R Histogram
 author: Judy
 date: '2017-09-26'
 slug: histogram
@@ -12,9 +12,9 @@ tags:
   - bar graph
 ---
 
-How to use a histogram to display selected Lahman baseball database statistics
+How to use a histogram to display selected Lahman baseball database statistics.
 
-First, install packages: Lahman, dplyr, and ggplot2.  Then bring them in with libary: 
+First, install packages: Lahman, dplyr, and ggplot2.  Then bring them in with libary. 
 
 ```{r warning=FALSE, message = FALSE}
 library(Lahman)
