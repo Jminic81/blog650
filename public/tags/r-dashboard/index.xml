@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R Dashboard on Blog650</title>
+    <link>https://blog650.netlify.com/tags/r-dashboard/</link>
+    <description>Recent content in R Dashboard on Blog650</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright notice</copyright>
+    <lastBuildDate>Fri, 29 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog650.netlify.com/tags/r-dashboard/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>R Dashboard</title>
+      <link>https://blog650.netlify.com/post/r-dashboard/</link>
+      <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog650.netlify.com/post/r-dashboard/</guid>
+      <description>Data was extracted from the Lahman baseball database and visualized using a dot plot, a bar chart, and a line graph (time series). A dashboard was used to display all three graphs. https://jminic81.github.io/dashboard/</description>
+    </item>
+    
+  </channel>
+</rss>
