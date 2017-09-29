@@ -21,5 +21,14 @@
       <description>Data was extracted from the Lahman baseball database and visualized using a dot plot, a bar chart, and a line graph (time series). A dashboard was used to display all three graphs. https://jminic81.github.io/dashboard/</description>
     </item>
     
+    <item>
+      <title>R Dashboard</title>
+      <link>https://blog650.netlify.com/posts/r-dashboard/</link>
+      <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog650.netlify.com/posts/r-dashboard/</guid>
+      <description>Data was extracted from the Lahman baseball database and visualized using a dot plot, a bar chart, and a line graph (time series). A dashboard was used to display all three graphs. https://jminic81.github.io/dashboard/</description>
+    </item>
+    
   </channel>
 </rss>
