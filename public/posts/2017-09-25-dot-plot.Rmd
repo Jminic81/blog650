@@ -13,7 +13,7 @@ How to use an R dot plot with special features to display selected Lahman baseba
 
 In this example, we show number of career homeruns vs. strike outs for all players.  The dot plot is formatted so players first and last names are displayed when the mouse hovers over each dot.
 
-First, install packages; dev tools, Lahman, dplyr, ggplot2 and ggiraph.  Then  bring them in with libary. 
+First, install packages; dev tools, Lahman, dplyr, ggplot2 and ggiraph.  Then  bring them in with library. 
 
 ```{r warning=FALSE, message = FALSE}
 library(Lahman)

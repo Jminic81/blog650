@@ -69,7 +69,7 @@
   </header>
   <div class="c-article__summary">
     How to use a line graph to display changes over time in selected Lahman baseball database statistics.
-First, install packages: Lahman, dplyr, ggplot2, and ggiraph. Then bring them in with libary.
+First, install packages: Lahman, dplyr, ggplot2, and ggiraph. Then bring them in with library.
 library(Lahman)library(dplyr)library(ggplot2)library(ggiraph)In this example, we extract season homerun totals for Babe Ruth from the Lahman baseball database.
 df&lt;-Batting%&gt;%filter(playerID==&#39;ruthba01&#39;)%&gt;%select(yearID,HR)Then we use ggplot to visualize the data. Years are on the x-axis and homeruns are on the y-axis.
   </div>

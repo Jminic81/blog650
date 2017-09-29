@@ -12,7 +12,7 @@ tags:
 
 How to use a bar chart to display selected Lahman baseball database statistics.
 
-First, install packages: Lahman, dplyr, and ggplot2.  Then bring them in with libary. 
+First, install packages: Lahman, dplyr, and ggplot2.  Then bring them in with library. 
 
 ```{r warning=FALSE, message = FALSE}
 library(Lahman)
